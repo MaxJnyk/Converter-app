@@ -1,11 +1,13 @@
-import {FC} from 'react';
+import React from "react";
 import Converter from "../components/converter/converter";
 
-interface ConverterPageProps {
-}
-
-export const ConverterPage: FC<ConverterPageProps> = ({}: ConverterPageProps) => {
-    return <div>
-        <Converter />
-    </div>
-}
+type Props = {
+  loading: boolean;
+};
+export const ConverterPage: React.FC<Props> = ({ loading }) => {
+  return (
+    <>
+      <Converter loading={loading} />
+    </>
+  );
+};
