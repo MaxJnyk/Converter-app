@@ -100,25 +100,6 @@ export const CurrencyInput: React.FC<Props> = ({
         placeholder={"0.00"}
         onKeyDown={(event) => keyDownHandler(event)}
       />
-      {inputValue ? (
-        <div className={"icon__container"} onClick={copyToClipBoard}>
-          <img
-            id={"copy-icon"}
-            className={"icon"}
-            src={copyIcon.toString()}
-            alt={""}
-          />
-        </div>
-      ) : (
-        <div className={"icon__container"}>
-          <img
-            id={"copy-icon"}
-            className={"icon disabled"}
-            src={copyIcon.toString()}
-            alt={""}
-          />
-        </div>
-      )}
       <CurrencySelect
         onFavoriteChange={onFavoriteChange}
         favorite={favorite}
