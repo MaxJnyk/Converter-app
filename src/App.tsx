@@ -14,7 +14,7 @@ function App() {
     useEffect(() => {
         const requestInterval = 0;
         const interval = setInterval(() => {
-            getAvailableCurrencies();
+            getAvailableCurrencies()
             clearInterval(interval);
         }, requestInterval);
     }, []);
