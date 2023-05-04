@@ -18,3 +18,8 @@ function App() {
 }
 
 export default App
+
+export enum LocalStoragePath {
+    CONVERTER_DEFAULT_CURRENCY = "converter-default-currency",
+    FAVORITE_RATES = "favorite-rates",
+}
